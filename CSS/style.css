@@ -1,0 +1,108 @@
+.main {
+	margin: 20px;
+	align-items: center;
+}
+
+.header{
+	display: flex; 
+	justify-content: space-between;  
+	background-color:#1a54a1;
+	color: white; 
+	height: 50px; 
+	align-items: center;
+}
+.header-title{
+	margin-left:10px;
+
+}
+.header-bar{
+	display: flex;
+
+}
+.header-bar-h6{
+	margin-right: 5px;
+	margin-left: 5px;
+
+}
+.form-button{
+	margin-top: 10px;
+
+}
+.form-button-green{
+	background-color: green;
+	color:white;
+	padding: 7px 10px;
+	text-align: center;
+	border-radius: 20px;
+
+
+}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.span-account{
+	color:#1a54a1;
+    font-weight: 500
+}
+
+.body{
+	margin-top: 30px;
+	display: flex;
+}
+
+.body-form{
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 20%;
+}
+.body-size{
+	padding: 7px 20px;
+}
+.news{
+	width: 50%;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.news-image{
+	height: 200px;
+	width: 100%
+
+}
+.news-p{
+	font-size: 25px;
+	color: blue;
+	font-weight: 500;
+}
+.news-span{
+	font-size: 20px;
+}
+.table{
+	margin-top:30px;
+	width: 30%;
+	margin-right: 5px;
+	margin-left: 25px;
+}
+.table-wid{
+	width: 90%;
+}
+.tr-th{
+	background-color: black;
+	color:white;
+}
+.tr-1{
+    background-color: green;
+    text-align: center;
+}
+.tr-2{
+	background-color: #73f573;
+	text-align: center;
+}
+.tr-3{
+	background-color: #dfe9f0;
+	text-align: center;
+}
+.tr-4{
+	background-color: #de6db4;
+	text-align: center;
+}
