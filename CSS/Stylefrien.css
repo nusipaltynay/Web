@@ -1,0 +1,164 @@
+.main{
+	display: flex;
+	justify-content: space-between;
+}
+
+header{
+	display: flex;
+	background-color: blue;
+	color: white;
+	height: 8%;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.header-h5{
+	margin-left:10px;
+	font-size: 15px;
+	font-style: colibri;
+	font-weight: 800;
+	align-items: center;
+}
+.header-p{
+	margin-left: 5px;
+	margin-right: 30px;
+	font-family: Arial;
+	font-weight: 300;
+	font-size: 15px;
+}
+.body{
+	margin-top: 30px;
+	display: flex;
+	border: 2px  solid #e9f0eb;
+
+
+}
+.body-form{
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 20%;
+	margin-top: 20px
+}
+.body-p1{
+	font-size: 20px;
+	font-weight: 800;
+
+}
+.body-span{
+	color: #4ab6e0;
+}
+.body-p2{
+	text-align: center;
+	font-size: 12px;
+	font-weight: 300;
+}
+.body-image{
+	height:250px;
+	width: 100%;
+}
+.body-p-p{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-content: space-between;
+	border: 2px solid #e9f0eb;
+
+
+}
+.body-p-bor{
+border: 2px solid#e9f0eb;
+flex-direction: column;
+height: 20px;
+padding: 5px;
+margin: 0px;
+
+
+}
+.friend{
+	display: inline;
+	width: 60%;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+.f-body{
+	display: flex;
+	height:  80px;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom:30px;
+	margin-left: 30px;
+	
+}
+.body-image1{
+	border-radius: 50px;
+	height: 100%
+
+
+}
+.body-div-but{
+	display: flex;
+	justify-content: space-between;
+	margin:0px;
+}
+.button1{
+   background-color:#f211cd;
+	color:white;
+	text-align: center;
+	height: 25px;
+	margin-top: 10px;
+}
+
+.body-div{
+	width: 100%;
+
+
+}
+.body-div-p1{
+	font-weight: 800;
+	font-size: 20px;
+}
+.body-div-p2{
+	font-weight: 200;
+	font-size: 15px;
+}
+
+.button2{
+	background-color:#cfcec6
+		color:white;
+	text-align: center;
+}
+.body-table{
+	margin-top: 15px;
+	width: 20%;
+	margin-left:20px;
+/*	margin-right: 50px;*/
+	padding: 25px 25px;
+}
+.body-table-item{
+	border: 2px  solid #e9f0eb;
+/*	margin-left: 50px;*/
+
+}
+.body-table-item-1{
+	display: flex;
+	justify-content: space-between;
+}
+.body-table-p{
+	font-size: 15px;
+	font-weight: 1000;
+}
+.p-style{
+		font-size: 14px;
+	font-weight:300 ;
+}
+.p1-style{
+		font-size: 10px;
+	font-weight: 100;
+}
+.body-time{
+	font-size: 10px;
+	font-weight: 100;
+	margin-top: 18px;
+	margin-right: 5px;
+
+}
+
