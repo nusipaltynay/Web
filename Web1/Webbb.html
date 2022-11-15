@@ -1,96 +1,84 @@
 <html>
-<head>
-	<title>Аниме</title>
-</head>
-<body>
-	<table>
-		<thead>
-			<tr>
-				<th>Фото</th>
-				<th>Имя </th>
-				<th>Стихия</th>
-				<th>Википедия</th>
+import React from "react";
+const likes = 100;
+const dislikes = 25;
+const btnStyle = {
+  margin: "40px",
+  border: "5px solid pink",
+  background: "red"
+};
+const btnDefault = {};
+class App extends React.Component {
+  constructor(props) {
+    super(props);
 
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			    <td>
-					<a href="Аанг.jpeg"> <img src="image/Аанг.jpeg" alt="Фото Аанга" height="50"> </a>
-				</td>
-				<td>
-					 Аанг
-				</td>
-				<td>
-                	<a href="AangSt.jpg"> <img src="image/AangSt.jpg" height="50"></a>
-             	<td>
-             	<td>
-             		<a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Википедия</a>
-                </td>
-            </tr>
-  
-          	<tr>
-			    <td>
-					<a href="Zukoo.jpg"> <img src="image/Zukoo.jpg" alt="Фото Зуко" height="50"></a>
-				</td>
-				<td>
-					  Зуко
-				</td>
-				<td>
-                	<a href="Zuko.jpg"> <img src="image/Zuko.jpg" height="50"></a>
-             	<td>
-             	<td>
-             		<a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Википедия</a>
-                </td>
-             </tr>	
-            
-            <tr>
-			    <td>
-					<a href="Катара.jpg"> <img src="image/Катара.jpg" alt="Фото Катара" height="50"></a>
-				</td>
-				<td>
-					  Катара
-				</td>
-				<td>
-                	<a href="KataraSt.png"> <img src="image/KataraSt.png" height="50"></a>
-             	<td>
-             	<td>
-             		<a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Википедия</a>
-                </td>
-             </tr>	
+    this.likeHandler = this.likeHandler.bind(this);
 
-             <tr>
-			    <td>
-					<a href="Тоф.jpg">	<img src="image/Тоф.jpg" alt="Фото Тоф" height="50"></a>
-				</td>
-				<td>
-					  Тоф Бейфонг
-				</td>
-				<td>
-                	 <a href="Tof.jpg"> <img src="image/Tof.jpg" height="50"></a>
-             	<td>
-             	<td>
-             		<a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Википедия</a>
-                </td>
-             </tr>	 
+    this.dislikeHandler = this.dislikeHandler.bind(this);
 
-             <tr>
-			    <td>
-					<a href="Azulaa.jpg"> <img src="image/Azulaa.jpg" alt="Фото Азула" height="50"></a>
-				</td>
-				<td>
-					  Азула
-				</td>
-				<td>
-                	 <a href="AzulaSt.jpg"> <img src="image/AzulaSt.jpg" height="50"></a>
-             	<td>
-             	<td>
-             		<a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Википедия</a>
-                </td>
-             </tr>	 
+    this.state = {
+      likeCount: likes,
+      dislikeCount: dislikes
+    };
+  }
+  render() {
+    return (
+      <div>
+        <div>{this.props.headerProp}</div>
+        <div><img src="Image/lat3.jpg" alt=""/></div>
+        <div>
+          <span>
+            <button
+              style={this.state.likeCount !== likes ? btnStyle : btnDefault}
+              onClick={this.likeHandler}
+            >
+              Like
+            </button>{" "}
+            | {this.state.likeCount}
+          </span>
 
-			
-		</tbody>
-	</table>
-	</body>
+          <span>
+            <button
+              style={
+                this.state.dislikeCount !== dislikes ? btnStyle : btnDefault
+              }
+              onClick={this.dislikeHandler}
+            >
+              Dislike
+            </button>{" "}
+            | {this.state.dislikeCount}
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  likeHandler() {
+    if (this.state.likeCount === likes) {
+      this.setState(state => ({
+        likeCount: state.likeCount + 1,
+        dislikeCount: dislikes
+      }));
+    }
+  }
+
+  dislikeHandler() {
+    if (this.state.dislikeCount === dislikes) {
+      this.setState(state => ({
+        dislikeCount: state.dislikeCount + 1,
+        likeCount: likes
+      }));
+    }
+  }
+}
+
+App.defaultProps = {
+  headerProp: "Header Section",
+
+  contentProp: "Content area"
+};
+
+export default App;
+
+
 </html>
