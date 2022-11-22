@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kurs_valuta</title>
+	<link rel="stylesheet" href="Task_Sprint.css">
+</head>
+<body>
+	<div class="main">
+		<div>
+			<p>Enter summa</p>
+			<div>
+				<input id="summa" type="number" name="summa"
+				onchange="calculate()">
+				<select id="currency" name="currency">
+    				<option value="kzt" selected>KZT</option>
+    				<option value="euro">EUR</option>
+    				<option value="usd">USD</option>
+   				</select>
+			</div>
+		</div>
+
+		<div>
+			<p>KZT(tenge)</p>
+			<input id="calc_tenge" type="text" name="" disabled>
+		</div>
+
+		<div>
+			<p>EUR(euro)</p>
+			<input  id="calc_euro"type="text" name="" disabled>
+		</div>
+
+		<div>
+			<p>USD(dollar)</p>
+			<input  id="calc_dollar" type="text" name="" disabled>
+		</div>
+
+	</div>
+	<script src="Task_Sprint.js"> </script>
+
+</body>
+</html>

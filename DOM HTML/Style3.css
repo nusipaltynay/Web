@@ -1,0 +1,33 @@
+.div_Card{
+	display: flex;
+	justify-content: normal;
+}
+.card_input{
+	border: 2px solid black;
+	margin:15px;
+	width: 60px;
+}
+.div_Name{
+	display: flex;
+}
+.name_input{
+	/*padding: 5px 10px 5px 10px;*/
+	border: 2px solid black;
+	width: 200px;
+	height: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.div_CVV{
+	display: flex;
+}
+.CVV_input{
+	border: 2px solid black;
+	margin:15px;
+	width: 30px;
+}
+.button{
+	background-color: blue;
+	color: white;
+
+}

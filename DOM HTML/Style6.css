@@ -1,0 +1,27 @@
+.main{
+	display: inline;
+}
+.div_login{
+	display: inline;
+
+}
+.inp_login{
+	padding: 5px 40px 5px 40px
+}
+.div_password{
+	display: inline;
+}
+.inp_password{
+	padding: 5px 40px 5px 40px
+}
+.div_retype_pass{
+	display: inline;
+}
+.inp_retype{
+	padding: 5px 40px 5px 40px
+}
+.button{
+	background-color: #0c0b26;
+	color:white;
+	margin-top:15px;
+}

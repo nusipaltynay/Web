@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registration_Form</title>
+	<link rel="stylesheet" href="Style6.css">
+<style>
+    .invalid { border-color: red; }
+    .error {height: 25px; color: red;}
+    form {text-align: center; margin-top: 50px;}
+</style>
+</head>
+<body>
+	<div class="main">
+		<div class="div_login">
+			<p>Email:</p>
+			<input id="login" class="inp_login" type="text" name="login">
+			<div id="loginError" class="error"></div>
+		</div>
+		<div class="div_password">
+			<p>Password:</p>
+			<input id="password" class="inp_password" type="password" name="password">
+			<div id="passwordError" class="error"></div>
+		</div>
+		<div class="div_retype_pass">
+			<p>Retype Password:</p>
+			<input id="retype_pass"class="inp_retype" type="password" name="retypePassword">
+		    <div id="retypeError" class="error"></div>
+		</div>
+		<div>
+			<button class="button" onclick="checkUser()">Register</button>
+		</div>
+	</div>
+    <script src="Script6.js"> </script>
+
+</body>
+</html>
